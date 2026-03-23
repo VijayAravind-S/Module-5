@@ -1,4 +1,4 @@
-# Exp.No:22  
+# Exp.No:5b
 ## Destructor
 
 ---
@@ -22,10 +22,20 @@ To create a Python class `Student` with a destructor.
 ### PROGRAM
 
 ```
-
+#Reg.No: 212222060292
+#Name: Vijay Aravind S
+#Add Your Code Here
+class Employee:
+    def __init__ (self):
+        print ( 'Employee created.' )
+    def __del__(self):
+        print("Destructor called, Employee deleted.")
+obj = Employee ()
 ```
 
 ### OUTPUT
+<img width="1184" height="216" alt="image" src="https://github.com/user-attachments/assets/42f39891-f90c-4fd5-acdb-5fd62aab5512" />
 
 
 ### RESULT
+Therefore, the output is the example to create a Python class Student with a destructor.
