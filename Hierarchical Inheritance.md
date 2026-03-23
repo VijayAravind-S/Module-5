@@ -1,4 +1,4 @@
-# Exp.No:25  
+# Exp.No:5c
 ## Hierarchical Inheritance
 
 ---
@@ -28,13 +28,69 @@ To write a Python program to get the employee and doctor details and display the
 
 ### PROGRAM
 ```
+#Reg.No: 212222060292
+#Name: Vijay Aravind S
+#Add Your Code Here
+class Details:
+    def get_details(self, id, name, gender):
+        self.id = id
+        self.name = name
+        self.gender = gender
 
+class Employee(Details):
+    def get_employee_details(self, company, department):
+        self.company = company
+        self.department = department
+
+    def display(self):
+        print("Employee Object")
+        print("Id: ", self.id)
+        print("Name: ", self.name)
+        print("Gender: ", self.gender)
+        print("Company: ", self.company)
+        print("Department: ", self.department)
+
+class Doctor(Details):
+    def get_doctor_details(self, hospital, department):
+        self.hospital = hospital
+        self.department = department
+
+    def display(self):
+        print("\nDoctor Object")
+        print("Id: ", self.id)
+        print("Name: ", self.name)
+        print("Gender: ", self.gender)
+        print("Hospital: ", self.hospital)
+        print("Department: ", self.department)
+
+emp_id = int(input())
+emp_name = input()
+emp_gender = input()
+emp_company = input()
+emp_dept = input()
+
+doc_id = int(input())
+doc_name = input()
+doc_gender = input()
+doc_hospital = input()
+doc_dept = input()
+
+emp = Employee()
+doc = Doctor()
+
+emp.get_details(emp_id, emp_name, emp_gender)
+emp.get_employee_details(emp_company, emp_dept)
+doc.get_details(doc_id, doc_name, doc_gender)
+doc.get_doctor_details(doc_hospital, doc_dept)
+emp.display()
+doc.display()
 
 ```
 
 ### OUTPUT  
+<img width="1183" height="486" alt="image" src="https://github.com/user-attachments/assets/d91622fa-14d9-4e33-b7b4-2c2794985931" />
 
-(Output Screenshot)  
 
 
 ### RESULT
+Therefore, the output is the example to write a Python program to get the employee and doctor details and display them using hierarchical inheritance. Create a parent (base) class named Details and two child (derived) classes named Employee and Doctor.
